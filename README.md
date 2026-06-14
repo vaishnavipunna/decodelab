@@ -32,6 +32,7 @@ movie-review-rating-platform/
 4. Open frontend in browser
 
 ## Screenshots
+<img width="1920" height="1080" alt="Screenshot 2026-06-14 104411" src="https://github.com/user-attachments/assets/9839f23f-d0db-465d-88f4-982e21453ca4" />
 
 ## Author
 Vaishnavi Punna# decodelab
