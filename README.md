@@ -11,7 +11,7 @@ A web-based platform where users can browse movies, submit reviews, and rate mov
 - Responsive UI
 
 ## Technologies Used
-- Java
+- Python
 - HTML
 - CSS
 - JavaScript
