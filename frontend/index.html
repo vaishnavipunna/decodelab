@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Marvel Movie Review & Quiz Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Marvel Cinematic Universe</h1>
+  <nav>
+    <a href="#movies">Movies</a>
+    <a href="#characters">Characters</a>
+    <a href="#quiz">Quiz</a>
+    <a href="#feedback">Feedback</a>
+  </nav>
+  <button id="themeToggle">Toggle Theme</button>
+</header>
+
+<div class="side-nav">
+  <a href="#movies">Movies</a>
+  <a href="#characters">Characters</a>
+  <a href="#quiz">Quiz</a>
+  <a href="#feedback">Feedback</a>
+</div>
+
+<main>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-left">
+      <div class="greet-hero" style="font-size:22px;font-weight:700;">Welcome, True Believer!</div>
+      <h1>Marvel Movie Review & Quiz</h1>
+      <p class="muted">Discover, rate and challenge your Marvel knowledge — built with love for fans.</p>
+      <div style="display:flex;gap:12px;">
+        <button class="btn" id="btn-feature">Explore Featured</button>
+        <button class="btn" id="btn-write">Write a Review</button>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="slideshow" id="slideshow">
+        <div class="slides" id="slides"></div>
+        <div class="controls" id="dots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recommended Movies -->
+  <section id="recommended" style="margin-top:40px;">
+    <h2 style="color:var(--accent); margin-bottom:12px;">Recommended for You</h2>
+    <div class="movies-grid" id="recommendedGrid"></div>
+  </section>
+
+  <!-- Movies Section -->
+  <section id="movies">
+    <h2 style="margin:18px 0;font-size:28px;color:var(--accent)">Popular Marvel Movies</h2>
+    <div class="movies-grid" id="moviesGrid"></div>
+  </section>
+
+  <!-- Characters Section -->
+  <section id="characters" style="margin-top:40px;">
+    <h2 style="color:var(--accent); margin-bottom:12px;">Explore Characters</h2>
+    <div class="movies-grid" id="charactersGrid"></div>
+  </section>
+
+  <!-- Character Modal -->
+  <div class="modal" id="charModal">
+    <div class="modal-content">
+      <button class="close-modal" onclick="closeCharModal()">Close</button>
+      <h2 id="modalCharName" style="color:var(--accent)"></h2>
+      <div class="movies-grid" id="modalMoviesGrid"></div>
+    </div>
+  </div>
+
+  <!-- Quiz Section -->
+  <section id="quiz" class="section" style="margin-top:30px;">
+    <h2 style="color:var(--accent)">Marvel Quiz</h2>
+    <div class="quiz-card" id="quizCard"></div>
+  </section>
+
+  <!-- Feedback Section -->
+  <section id="feedback" class="two-col">
+    <div class="section">
+      <h2 style="color:var(--accent)">Submit Feedback</h2>
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Your name">
+      <label for="email">Email (optional)</label>
+      <input type="email" id="email" placeholder="Your email">
+      <label for="category">Category</label>
+      <select id="category">
+        <option value="General">General</option>
+        <option value="Suggestion">Suggestion</option>
+        <option value="Complaint">Complaint</option>
+      </select>
+      <label for="rating">Rating</label>
+      <div class="stars" id="fb-stars"></div>
+      <label for="fb-movie">Movie</label>
+      <select id="fb-movie">
+        <option value="">--Select Movie--</option>
+      </select>
+      <label for="comment">Comment</label>
+      <textarea id="comment" placeholder="Write your thoughts..."></textarea>
+      <button class="btn" id="submitFeedback">Submit</button>
+    </div>
+    <div class="section">
+      <h2 style="color:var(--accent)">Recent Feedback</h2>
+      <div id="fb-list"><div class="small">No feedback yet.</div></div>
+    </div>
+  </section>
+
+  <!-- Movie Details Modal -->
+  <div id="movieModal" class="modal">
+    <div style="background:var(--card-bg); padding:20px; border-radius:12px; max-width:500px; width:90%; position:relative;">
+      <span id="closeModal" style="position:absolute; top:10px; right:15px; cursor:pointer; font-size:22px; font-weight:bold;">&times;</span>
+      <h2 id="modalTitle" style="color:var(--accent); margin-bottom:12px;"></h2>
+      <img id="modalImg" style="width:100%; border-radius:12px; margin-bottom:12px;" />
+      <p id="modalDesc"></p>
+    </div>
+  </div>
+</main>
+<section id="admin">
+  <h2>Admin Dashboard</h2>
+
+  <div class="dashboard">
+
+    <div class="card">
+      <h3>Total Movies</h3>
+      <p id="totalMovies">0</p>
+    </div>
+
+    <div class="card">
+      <h3>Total Feedback</h3>
+      <p id="totalFeedback">0</p>
+    </div>
+
+    <div class="card">
+      <h3>Average Rating</h3>
+      <p id="avgRating">0</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="admin">
+
+    
+
+    <!-- ADD THIS HERE -->
+
+    <section id="admin-feedback">
+
+        <h2>Manage Feedback</h2>
+
+        <table id="feedbackTable">
+
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Movie</th>
+                    <th>Rating</th>
+                    <th>Comment</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="feedbackTableBody">
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+</section>
+<footer>
+  &copy; 2026  Marvel Cinematic Universe. All Rights Reserved.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
