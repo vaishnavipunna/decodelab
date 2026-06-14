@@ -32,15 +32,6 @@ movie-review-rating-platform/
 4. Open frontend in browser
 
 ## Screenshots
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/38da81b9-0b9f-4ca2-9cf3-e10302d81811" />
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1f1bb4cc-ce55-4064-a273-e9872a648d3d" />
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c16fba1e-5883-4a4e-9860-42fdd6c486fb" />
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e320169e-6c53-45e8-a5aa-9c23d0125a3d" />
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2c242063-d09d-4898-9696-e9cce7789b1e" />
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/09d02b3e-dddd-47ea-a6e3-b3bdcb236804" />
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a4551d15-5401-4d1e-81ac-373adcc0c0ee" />
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c0b6d7a0-06a4-4028-9e65-00872dc9f738" />
-
 
 ## Author
 Vaishnavi Punna# decodelab
