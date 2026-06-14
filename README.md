@@ -32,7 +32,14 @@ movie-review-rating-platform/
 4. Open frontend in browser
 
 ## Screenshots
-
+![Home Page](screenshots/homepage.png)
+![Home Page](screenshots/recommended.png)
+![Home Page](screenshots/popular.png)
+![Home Page](screenshots/charcters.png)
+![Home Page](screenshots/quiz.png)
+![Home Page](screenshots/feedback.png)
+![Home Page](screenshots/submit.png)
+![Home Page](screenshots/dashboard.png)
 
 ## Author
 Vaishnavi Punna# decodelab
